@@ -9,7 +9,9 @@ app.use(cors());
 app.use(express.json());
 
 app.use('/api/', schoolRoutes);
-
+app.get('/', (req, res) => {
+    res.send('Welcome to the Educase Assignment API');
+});
 app.listen(PORT, async () => {
     try {
         console.log(`Server is running on port ${PORT} and connected to MySQL database`);
