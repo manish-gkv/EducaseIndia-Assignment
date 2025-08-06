@@ -52,8 +52,7 @@ A RESTful API for managing schools with geolocation-based features. This API all
        name VARCHAR(255) NOT NULL,
        address TEXT NOT NULL,
        latitude DECIMAL(10, 8) NOT NULL,
-       longitude DECIMAL(11, 8) NOT NULL,
-       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+       longitude DECIMAL(11, 8) NOT NULL
    );
    ```
 
@@ -119,7 +118,6 @@ GET /api/listSchools?latitude=40.7128&longitude=-74.0060
             "address": "123 Main Street, Springfield",
             "latitude": 39.7817,
             "longitude": -89.6501,
-            "created_at": "2025-01-01T10:00:00.000Z"
         }
     ]
 }
